@@ -57,9 +57,6 @@ namespace CountDownTimer
                 for (int i = Properties.Settings.Default.StartCountDown; i >= 0; i--)
                 {
                     timeLabel.Text = i == 0 ? "スタート" : i.ToString();
-                    timeLabel.Text = i == 0 ? "スタート" : i.ToString();
-                    timeLabel.Text = i == 0 ? "スタート" : i.ToString();
-                    timeLabel.Text = i == 0 ? "スタート" : i.ToString();
                     this.Refresh();
                     System.Threading.Thread.Sleep(1000);
                 }
@@ -86,30 +83,30 @@ namespace CountDownTimer
 
         private void ChangeFormPosition()
         {
-            if (formPosition == 0)
+            int left = 0;
+            int top = 0;
+
+            switch (formPosition)
             {
-                int left = 0;
-                int top = 0;
-                DesktopBounds = new Rectangle(left, top, this.Width, this.Height);
+                case 0:
+                    left = 0;
+                    top = 0;
+                    break;
+                case 1:
+                    left = Screen.PrimaryScreen.WorkingArea.Width - this.Width;
+                    top = 0;
+                    break;
+                case 2:
+                    left = 0;
+                    top = Screen.PrimaryScreen.WorkingArea.Height - this.Height;
+                    break;
+                case 3:
+                    left = Screen.PrimaryScreen.WorkingArea.Width - this.Width;
+                    top = Screen.PrimaryScreen.WorkingArea.Height - this.Height;
+                    break;
             }
-            if (formPosition == 1)
-            {
-                int left = Screen.PrimaryScreen.WorkingArea.Width - this.Width;
-                int top = 0;
-                DesktopBounds = new Rectangle(left, top, this.Width, this.Height);
-            }
-            if (formPosition == 2)
-            {
-                int left = 0;
-                int top = Screen.PrimaryScreen.WorkingArea.Height - this.Height;
-                DesktopBounds = new Rectangle(left, top, this.Width, this.Height);
-            }
-            if (formPosition == 3)
-            {
-                int left = Screen.PrimaryScreen.WorkingArea.Width - this.Width;
-                int top = Screen.PrimaryScreen.WorkingArea.Height - this.Height;
-                DesktopBounds = new Rectangle(left, top, this.Width, this.Height);
-            }
+
+            DesktopBounds = new Rectangle(left, top, this.Width, this.Height);
         }
     }
 }
