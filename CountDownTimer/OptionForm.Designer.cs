@@ -53,11 +53,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.radioButtonTopLeft = new System.Windows.Forms.RadioButton();
-            this.radioButtonTopRight = new System.Windows.Forms.RadioButton();
-            this.radioButtonBottomLeft = new System.Windows.Forms.RadioButton();
             this.radioButtonBottomRight = new System.Windows.Forms.RadioButton();
+            this.radioButtonBottomLeft = new System.Windows.Forms.RadioButton();
+            this.radioButtonTopRight = new System.Windows.Forms.RadioButton();
+            this.radioButtonTopLeft = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCountDownSeconds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRunMinute)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -312,35 +312,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "タイマーフォームの表示位置";
             // 
-            // label8
+            // radioButtonBottomRight
             // 
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Location = new System.Drawing.Point(28, 29);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(153, 129);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "スクリーン";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // radioButtonTopLeft
-            // 
-            this.radioButtonTopLeft.AutoSize = true;
-            this.radioButtonTopLeft.Location = new System.Drawing.Point(28, 29);
-            this.radioButtonTopLeft.Name = "radioButtonTopLeft";
-            this.radioButtonTopLeft.Size = new System.Drawing.Size(14, 13);
-            this.radioButtonTopLeft.TabIndex = 1;
-            this.radioButtonTopLeft.TabStop = true;
-            this.radioButtonTopLeft.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonTopRight
-            // 
-            this.radioButtonTopRight.AutoSize = true;
-            this.radioButtonTopRight.Location = new System.Drawing.Point(167, 29);
-            this.radioButtonTopRight.Name = "radioButtonTopRight";
-            this.radioButtonTopRight.Size = new System.Drawing.Size(14, 13);
-            this.radioButtonTopRight.TabIndex = 2;
-            this.radioButtonTopRight.TabStop = true;
-            this.radioButtonTopRight.UseVisualStyleBackColor = true;
+            this.radioButtonBottomRight.AutoSize = true;
+            this.radioButtonBottomRight.Location = new System.Drawing.Point(167, 145);
+            this.radioButtonBottomRight.Name = "radioButtonBottomRight";
+            this.radioButtonBottomRight.Size = new System.Drawing.Size(14, 13);
+            this.radioButtonBottomRight.TabIndex = 4;
+            this.radioButtonBottomRight.TabStop = true;
+            this.radioButtonBottomRight.UseVisualStyleBackColor = true;
             // 
             // radioButtonBottomLeft
             // 
@@ -352,15 +332,35 @@
             this.radioButtonBottomLeft.TabStop = true;
             this.radioButtonBottomLeft.UseVisualStyleBackColor = true;
             // 
-            // radioButtonBottomRight
+            // radioButtonTopRight
             // 
-            this.radioButtonBottomRight.AutoSize = true;
-            this.radioButtonBottomRight.Location = new System.Drawing.Point(167, 145);
-            this.radioButtonBottomRight.Name = "radioButtonBottomRight";
-            this.radioButtonBottomRight.Size = new System.Drawing.Size(14, 13);
-            this.radioButtonBottomRight.TabIndex = 4;
-            this.radioButtonBottomRight.TabStop = true;
-            this.radioButtonBottomRight.UseVisualStyleBackColor = true;
+            this.radioButtonTopRight.AutoSize = true;
+            this.radioButtonTopRight.Location = new System.Drawing.Point(167, 29);
+            this.radioButtonTopRight.Name = "radioButtonTopRight";
+            this.radioButtonTopRight.Size = new System.Drawing.Size(14, 13);
+            this.radioButtonTopRight.TabIndex = 2;
+            this.radioButtonTopRight.TabStop = true;
+            this.radioButtonTopRight.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonTopLeft
+            // 
+            this.radioButtonTopLeft.AutoSize = true;
+            this.radioButtonTopLeft.Location = new System.Drawing.Point(28, 29);
+            this.radioButtonTopLeft.Name = "radioButtonTopLeft";
+            this.radioButtonTopLeft.Size = new System.Drawing.Size(14, 13);
+            this.radioButtonTopLeft.TabIndex = 1;
+            this.radioButtonTopLeft.TabStop = true;
+            this.radioButtonTopLeft.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.Location = new System.Drawing.Point(28, 29);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(153, 129);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "スクリーン";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OptionForm
             // 
